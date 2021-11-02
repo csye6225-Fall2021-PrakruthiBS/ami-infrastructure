@@ -4,7 +4,7 @@
 
     "builders": [
         {
-            "type": "amazon-ebs",
+            "type": "amazon-ebs"
             "profile": "{{user `profile`}}",
             "region": "{{user `aws_region`}}",
             "instance_type": "{{user `instance_type`}}",
