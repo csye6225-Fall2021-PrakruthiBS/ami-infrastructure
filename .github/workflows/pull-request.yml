@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Repo
-        uses: actions/checkout@v2
-              
+        uses: actions/checkout@v2        
       - name: Validate Packer
         uses: hashicorp/packer-github-actions@master
         with:
