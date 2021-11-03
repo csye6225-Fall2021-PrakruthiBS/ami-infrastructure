@@ -1,22 +1,11 @@
-name: Packer Validation on Pull Requests
-
+name: pull-request
 on:
-
   pull_request:
-    branches: [main]
-
+    branches: [ main ]
+  workflow_dispatch: 
 jobs:
   validate:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-    - name: Validate Packer Template
-      uses: hashicorp/packer-github-action@main
-      with:
-        command: validate
-        arguments: -syntax-only
-        target: ami.json
-      env:
-        PACKER_LOG: 1
+      - name: Check out code
+      - uses: actions/checkout@v2
