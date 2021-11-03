@@ -1,6 +1,4 @@
-
 name: Run packer build on a template file
-
 on:
   push:
     branches:
