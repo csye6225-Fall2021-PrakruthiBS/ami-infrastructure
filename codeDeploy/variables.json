@@ -1,0 +1,7 @@
+{
+    "instance_type": "t2.micro",
+    "subnet_id": "subnet-08ea45b23a5c9b9b7",
+    "profile"  : "ghactions-ami",
+    "ssh_username": "ubuntu",
+    "aws_region"  : "us_east_1"
+}
