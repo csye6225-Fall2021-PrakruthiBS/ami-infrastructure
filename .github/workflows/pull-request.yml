@@ -9,3 +9,11 @@ jobs:
     steps:
       - name: Check out code
       - uses: actions/checkout@v2
+      - name: Validate Packer Template
+      uses: hashicorp/packer-github-action@main
+      with:
+        command: validate
+        arguments: -syntax-only
+        target: ami.json
+      env:
+        PACKER_LOG: 1
