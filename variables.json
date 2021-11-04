@@ -3,5 +3,5 @@
     "subnet_id": "subnet-08ea45b23a5c9b9b7",
     "profile"  : "ghactions_ami",
     "ssh_username": "ubuntu",
-    "aws_region"  : "us_east_1"
+    "aws_region"  : "us-east-1"
 }
