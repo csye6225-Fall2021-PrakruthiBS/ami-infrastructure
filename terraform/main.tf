@@ -21,7 +21,6 @@ EOF
   }
 }
 
-
 resource "aws_iam_policy" "ghactions-ami_policy" {
   name   = var.policyName
   policy = <<POLICY
