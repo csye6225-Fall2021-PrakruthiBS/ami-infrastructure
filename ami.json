@@ -21,7 +21,7 @@
             "source_ami": "{{user `source_ami`}}",
             "ssh_username": "{{user `ssh_username`}}",
             "ami_name": "csye6225_{{timestamp}}",
-            "ami_description": "Ubuntu AMI for csye 6225",
+            "ami_description": "Ubuntu AMI for csye 6225 - demo",
             "ami_users": ["{{user `AWS_DEV_ACCOUNT_ID`}}","{{user `AWS_PROD_ACCOUNT_ID`}}"],
             "launch_block_device_mappings":[
                 {
